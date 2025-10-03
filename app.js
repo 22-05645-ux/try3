@@ -31,17 +31,17 @@ const details = {
 
 const vehicleImages = {
   "NGX 4853": "https://www.mitsubishi-motors.com.ph/content/dam/mitsubishi-motors-ph/images/site-images/cars/l300/2020/L300-FB_1080_FL.png",
-  "NGX 4856": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Mitsubishi_L300_Van.jpg",
-  "NFZ 2848": "https://www.isuzuphil.com/wp-content/uploads/2020/08/traviz-banner.png",
-  "CBP 5511": "https://www.isuzuphil.com/wp-content/uploads/2019/07/elf-banner.jpg",
-  "CBP 1336": "https://isuzuphil.com/wp-content/uploads/2019/07/isuzu-elf-truck.jpg",
-  "ZSG 105": "https://trucksite.com/photos/isuzu-npr-box-truck.jpg",
-  "UOF 225": "https://www.isuzuphil.com/wp-content/uploads/2020/06/isuzu-elf-2.jpg",
-  "NQX 657": "https://www.isuzuphil.com/wp-content/uploads/2020/06/isuzu-elf-3.jpg",
-  "WQT 225": "https://www.isuzuphil.com/wp-content/uploads/2020/06/isuzu-elf-4.jpg",
-  "MAM 7806": "https://www.isuzuphil.com/wp-content/uploads/2020/06/isuzu-elf-5.jpg",
-  "NBO 6586": "https://www.isuzuphil.com/wp-content/uploads/2020/06/isuzu-elf-6.jpg",
-  "EMPTY": "https://via.placeholder.com/200x120?text=No+Image"
+  "NGX 4856": "https://www.mitsubishi-motors.com.ph/content/dam/mitsubishi-motors-ph/images/site-images/cars/l300/2020/L300-FB_1080_FL.png",
+  "NFZ 2848": "https://www.isuzu-gencars.com.ph/wp-content/uploads/2020/07/Isuzu-TRAVIZ-Utility-Van-222-scaled.jpg",
+  "CBP 5511": "https://carused.jp/images/elf/flatbody.jpg",
+  "CBP 1336": "https://carused.jp/images/elf/flatbody.jpg",
+  "ZSG 105": "https://www.mitsubishi-motors.com.ph/content/dam/mitsubishi-motors-ph/images/site-images/cars/l300/2020/L300-FB_1080_FL.png",
+  "UOF 225": "https://www.isuzu-gencars.com.ph/wp-content/uploads/2020/07/Isuzu-TRAVIZ-Utility-Van-222-scaled.jpg",
+  "NQX 657": "https://www.carmag.co.za/wp-content/uploads/2023/10/Isuzu-D-Max-edit-2-800x480.png",
+  "WQT 225": "https://www.mitsubishi-motors.com.ph/content/dam/mitsubishi-motors-ph/images/site-images/cars/l300/2020/L300-FB_1080_FL.png,
+  "MAM 7806": "https://carused.jp/images/elf/flatbody.jpg",
+  "NBO 6586": "https://www.isuzu-gencars.com.ph/wp-content/uploads/2020/07/Isuzu-TRAVIZ-Utility-Van-222-scaled.jpg",
+  "EMPTY": "https://pluspng.com/img-png/ferrari-png-ferrari-sergio-png-picture-2256.png"
 };
 
 const app = document.getElementById("app");
