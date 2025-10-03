@@ -29,6 +29,21 @@ const details = {
   "EMPTY": { model: "Isuzu Elf Truck", yearBought: "2023", status: "Under Maintenance", lastTrip: "2025-09-08", lastMaintenance: "2025-09-16", whereabouts: "Batangas City" },
 };
 
+const vehicleImages = {
+  "NGX 4853": "https://www.mitsubishi-motors.com.ph/content/dam/mitsubishi-motors-ph/images/site-images/cars/l300/2020/L300-FB_1080_FL.png",
+  "NGX 4856": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Mitsubishi_L300_Van.jpg",
+  "NFZ 2848": "https://www.isuzuphil.com/wp-content/uploads/2020/08/traviz-banner.png",
+  "CBP 5511": "https://www.isuzuphil.com/wp-content/uploads/2019/07/elf-banner.jpg",
+  "CBP 1336": "https://isuzuphil.com/wp-content/uploads/2019/07/isuzu-elf-truck.jpg",
+  "ZSG 105": "https://trucksite.com/photos/isuzu-npr-box-truck.jpg",
+  "UOF 225": "https://www.isuzuphil.com/wp-content/uploads/2020/06/isuzu-elf-2.jpg",
+  "NQX 657": "https://www.isuzuphil.com/wp-content/uploads/2020/06/isuzu-elf-3.jpg",
+  "WQT 225": "https://www.isuzuphil.com/wp-content/uploads/2020/06/isuzu-elf-4.jpg",
+  "MAM 7806": "https://www.isuzuphil.com/wp-content/uploads/2020/06/isuzu-elf-5.jpg",
+  "NBO 6586": "https://www.isuzuphil.com/wp-content/uploads/2020/06/isuzu-elf-6.jpg",
+  "EMPTY": "https://via.placeholder.com/200x120?text=No+Image"
+};
+
 const app = document.getElementById("app");
 let selectedVehicle = null;
 let activeTab = "Details";
@@ -54,17 +69,28 @@ function renderList() {
   vehicles.forEach(v => {
     const card = document.createElement("div");
     card.className = "card";
+
+    // pick image from mapping, or fallback placeholder
+    const imgUrl = vehicleImages[v.plate] || "https://via.placeholder.com/200x120?text=Vehicle";
+
     card.innerHTML = `
-      <img src="https://www.mitsubishi-motors.com.ph/content/dam/mitsubishi-motors-ph/images/site-images/cars/l300/2020/L300-FB_1080_FL.png" />
+      <img src="${imgUrl}" alt="${v.plate}" />
       <h2>${v.plate}</h2>
       <p>Whereabouts: ${v.whereabouts}</p>
     `;
-    card.onclick = () => { selectedVehicle = v.plate; activeTab = "Details"; renderDetails(); };
+
+    card.onclick = () => { 
+      selectedVehicle = v.plate; 
+      activeTab = "Details"; 
+      renderDetails(); 
+    };
+
     grid.appendChild(card);
   });
 
   app.appendChild(grid);
 }
+
 
 function renderDetails() {
   const v = vehicles.find(x => x.plate === selectedVehicle);
