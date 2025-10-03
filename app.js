@@ -70,7 +70,6 @@ function renderList() {
     const card = document.createElement("div");
     card.className = "card";
 
-    // pick image from mapping, or fallback placeholder
     const imgUrl = vehicleImages[v.plate] || "https://via.placeholder.com/200x120?text=Vehicle";
 
     card.innerHTML = `
